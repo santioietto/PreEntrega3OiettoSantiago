@@ -76,6 +76,14 @@
 .flex-enlace {
     display: flex;
     justify-content: center;
+    a {
+        &:visited{
+            color: lighten($color: gray, $amount: 10);
+        }
+        &:active{
+            color: $color-principal;
+        }
+    }
 }
 
 

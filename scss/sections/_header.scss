@@ -11,23 +11,34 @@
     z-index: 5000;
     top: 0;
     border-bottom: 3px solid #512421;
+
+    .logo {
+        a {
+            img {
+                width: 60px;
+                margin: 10px;
+            }
+        }
+    }
+
+    .color-nav {
+        background-color: white !important;
+
+
+        form {
+            .bus-color {
+                color: #512421;
+                border-color: #512421;
+
+                &:hover {
+                    background-color: #512421 !important;
+                    border-color: white !important;
+                    color: white;
+                }
+            }
+        }
+    }
 }
 
-.logo a img {
-    width: 60px;
-    margin: 10px;
-}
 
-.color-nav {
-    background-color: white !important;
-}
 
-.bus-color {
-    color: #512421;
-    border-color: #512421;
-}
-
-.bus-color:hover {
-    background-color: #512421 !important;
-    border-color: white !important;
-}
