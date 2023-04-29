@@ -10,7 +10,7 @@
     position: sticky;
     z-index: 5000;
     top: 0;
-    border-bottom: 3px solid #512421;
+    border-bottom: 3px solid $color-principal;
 
     &__logo {
         a {
@@ -26,11 +26,11 @@
         
         form {
             .bus-color {
-                color: #512421;
-                border-color: #512421;
+                color: $color-principal;
+                border-color: $color-principal;
 
                 &:hover {
-                    background-color: #512421 !important;
+                    background-color: $color-principal !important;
                     border-color: white !important;
                     color: white;
                 }

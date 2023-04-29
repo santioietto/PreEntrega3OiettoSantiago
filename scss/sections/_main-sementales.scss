@@ -18,20 +18,27 @@
 
 // media query - estrategia mobile last//
 @media (max-width:576px) {
-    
-    &__titulopadrillos {
-        font-size: 30px;
+    .mainsementales{
+        &__titulopadrillos {
+            font-size: 30px;
+        }
+        
+        .tamaño-padrillos {
+            width: 350px;
+            margin: auto;
+            padding: 10px;
+        }
+        .video {
+            width: 250px;
+            height: 215px;
+            margin: auto;
+        }
+        &__infosementales{
+            p{
+                font-size: 15px;
+            }
+        }
     }
+        
 
-    .tamaño-padrillos {
-        width: 350px;
-        margin: auto;
-        padding: 10px;
-    }
-
-    .video {
-        width: 250px;
-        height: 215px;
-        margin: auto;
-    }
 }

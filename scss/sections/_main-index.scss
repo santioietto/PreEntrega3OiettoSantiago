@@ -1,15 +1,15 @@
 /* main index */
 .mainindex {
-    .carrusel {
+    &__carrusel {
         width: 100vw;
     }
 
-    .titulo-haras {
+    &__tituloharas {
         display: flex;
         justify-content: center;
         align-items: center;
         color: white;
-        background-color: #512421;
+        background-color: $color-principal;
         width: 100vw;
         height: 150px;
         margin-top: 10px;
@@ -33,7 +33,7 @@
     }
 
 
-    .parrafo-inicio {
+    &__parrafoinicio {
         p {
             max-width: 1000px;
             margin: auto;
@@ -49,20 +49,24 @@
 
 // media query - estrategia mobile last//
 @media (max-width:576px) {
-    .titulo-haras {
-        height: 80px;
+    .mainindex{
+        &__tituloharas {
+            height: 80px;
+            h1 {
+                font-size: 45px;
+                margin: 10px;
+            }
+        }
+    
+        h3 {
+            font-size: 35px;
+        }
+    
+        &__parrafoinicio {
+            p {
+                font-size: 20px;
+            }
+        }
     }
 
-    .titulo-haras h1 {
-        font-size: 35px;
-        margin: 10px;
-    }
-
-    h3 {
-        font-size: 28px;
-    }
-
-    .parrafo-inicio p {
-        font-size: 17px;
-    }
 }

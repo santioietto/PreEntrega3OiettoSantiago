@@ -65,10 +65,10 @@
     margin: auto; } }
 
 /* main index */
-.mainindex .carrusel {
+.mainindex__carrusel {
   width: 100vw; }
 
-.mainindex .titulo-haras {
+.mainindex__tituloharas {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,7 +77,7 @@
   width: 100vw;
   height: 150px;
   margin-top: 10px; }
-  .mainindex .titulo-haras h1 {
+  .mainindex__tituloharas h1 {
     font-size: 60px;
     font-family: 'Noticia Text', serif;
     text-align: center; }
@@ -90,7 +90,7 @@
   margin-top: 40px;
   margin-bottom: 20px; }
 
-.mainindex .parrafo-inicio p {
+.mainindex__parrafoinicio p {
   max-width: 1000px;
   margin: auto;
   padding: 20px;
@@ -99,15 +99,15 @@
   font-family: 'Noticia Text', serif; }
 
 @media (max-width: 576px) {
-  .titulo-haras {
+  .mainindex__tituloharas {
     height: 80px; }
-  .titulo-haras h1 {
-    font-size: 35px;
-    margin: 10px; }
-  h3 {
-    font-size: 28px; }
-  .parrafo-inicio p {
-    font-size: 17px; } }
+    .mainindex__tituloharas h1 {
+      font-size: 45px;
+      margin: 10px; }
+  .mainindex h3 {
+    font-size: 35px; }
+  .mainindex__parrafoinicio p {
+    font-size: 20px; } }
 
 /* SECCION SEMENTALES */
 .mainsementales__flexsementales {
@@ -124,16 +124,18 @@
   text-align: center; }
 
 @media (max-width: 576px) {
-  __titulopadrillos {
+  .mainsementales__titulopadrillos {
     font-size: 30px; }
-  .tamaño-padrillos {
+  .mainsementales .tamaño-padrillos {
     width: 350px;
     margin: auto;
     padding: 10px; }
-  .video {
+  .mainsementales .video {
     width: 250px;
     height: 215px;
-    margin: auto; } }
+    margin: auto; }
+  .mainsementales__infosementales p {
+    font-size: 15px; } }
 
 /* MAIN SECCION MADRES */
 .negrita {
@@ -253,7 +255,9 @@
   .creme-tb {
     background-color: white;
     padding: 40px;
-    height: 30rem; } }
+    height: 30rem; }
+  p {
+    font-size: 15px; } }
 
 /* SECCION PRODUCTOS EN VENTA */
 .prod-venta {
@@ -402,4 +406,4 @@
 @media (max-width: 576px) {
   .fondo-secciones-titulo {
     height: 80px;
-    font-size: 35px; } }
+    font-size: 40px; } }
