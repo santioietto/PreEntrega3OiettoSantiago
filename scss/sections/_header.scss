@@ -12,7 +12,7 @@
     top: 0;
     border-bottom: 3px solid #512421;
 
-    .logo {
+    &__logo {
         a {
             img {
                 width: 60px;
@@ -21,10 +21,9 @@
         }
     }
 
-    .color-nav {
+    &__colornav {
         background-color: white !important;
-
-
+        
         form {
             .bus-color {
                 color: #512421;
@@ -39,6 +38,3 @@
         }
     }
 }
-
-
-

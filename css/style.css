@@ -23,15 +23,15 @@
   z-index: 5000;
   top: 0;
   border-bottom: 3px solid #512421; }
-  .header .logo a img {
+  .header__logo a img {
     width: 60px;
     margin: 10px; }
-  .header .color-nav {
+  .header__colornav {
     background-color: white !important; }
-    .header .color-nav form .bus-color {
+    .header__colornav form .bus-color {
       color: #512421;
       border-color: #512421; }
-      .header .color-nav form .bus-color:hover {
+      .header__colornav form .bus-color:hover {
         background-color: #512421 !important;
         border-color: white !important;
         color: white; }
