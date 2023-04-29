@@ -15,49 +15,54 @@
         margin-top: 10px;
 
         h1 {
-            font-size: 45px;
+            font-size: 60px;
             font-family: 'Noticia Text', serif;
             text-align: center;
         }
     }
+
+
+
     h3 {
         font-family: "Caveat";
         font-style: italic;
         text-align: center;
-        font-size: 33px;
+        font-size: 40px;
         margin-top: 40px;
         margin-bottom: 20px;
     }
-    .parrafo-inicio{
-        p{
-        max-width: 1000px;
-        margin: auto;
-        padding: 20px;
-        font-size: 20px;
-        text-align: center;
-        font-family: 'Noticia Text', serif;
+
+
+    .parrafo-inicio {
+        p {
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'Noticia Text', serif;
         }
     }
 }
 
 
 
-    // media query - estrategia mobile last//
-    @media (max-width:576px) {
-        .titulo-haras {
-            height: 80px;
-        }
-
-        .titulo-haras h1 {
-            font-size: 35px;
-            margin: 10px;
-        }
-
-        h3 {
-            font-size: 28px;
-        }
-
-        .parrafo-inicio p {
-            font-size: 17px;
-        }
+// media query - estrategia mobile last//
+@media (max-width:576px) {
+    .titulo-haras {
+        height: 80px;
     }
+
+    .titulo-haras h1 {
+        font-size: 35px;
+        margin: 10px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    .parrafo-inicio p {
+        font-size: 17px;
+    }
+}

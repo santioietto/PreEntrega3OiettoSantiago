@@ -78,7 +78,7 @@
   height: 150px;
   margin-top: 10px; }
   .mainindex .titulo-haras h1 {
-    font-size: 45px;
+    font-size: 60px;
     font-family: 'Noticia Text', serif;
     text-align: center; }
 
@@ -86,7 +86,7 @@
   font-family: "Caveat";
   font-style: italic;
   text-align: center;
-  font-size: 33px;
+  font-size: 40px;
   margin-top: 40px;
   margin-bottom: 20px; }
 
@@ -117,6 +117,11 @@
   flex-wrap: wrap;
   margin-top: 30px;
   margin-bottom: 30px; }
+
+.infosementales {
+  width: 70%;
+  margin: auto;
+  text-align: center; }
 
 @media (max-width: 576px) {
   .fondo-secciones-titulo {
@@ -216,9 +221,9 @@
 
 @media (max-width: 576px) {
   .grid-madres {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: "dashin-img dashin-img" "dashin-tb dashin-tb" "ava-tb ava-tb" "ava-img ava-img" "fell-img fell-img" "fell-tb fell-tb" "hempen-tb hempen-tb" "hempen-img hempen-img" "creme-img creme-img" "creme-tb creme-tb"; } }
+    grid-template-areas: "dashin-img" "dashin-tb" "ava-tb" "ava-img" "fell-img" "fell-tb" "hempen-tb" "hempen-img" "creme-img" "creme-tb"; } }
 
 /* SECCION PRODUCTOS EN VENTA */
 .prod-venta {
@@ -271,7 +276,7 @@
 
 .potrillo6 {
   grid-area: potrillo6;
-  min-width: 500px;
+  width: 500px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -295,40 +300,13 @@
 
 @media (max-width: 576px) {
   .prod-venta {
-    margin-left: 35px;
-    grid-template-columns: 30rem;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     grid-template-areas: "potrillo1" "potrillo2" "potrillo3" "potrillo4" "potrillo5" "potrillo6"; }
-  .potrillo1 {
-    /* width: 500px; */
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .potrillo2 {
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .potrillo3 {
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .potrillo4 {
-    max-width: 300px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .potrillo5 {
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .potrillo6 {
-    min-width: 50vw;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; } }
+  .potrillo1, .potrillo2, .potrillo3, .potrillo4, .potrillo5, .potrillo6 {
+    max-width: 300px; }
+    .potrillo1 .tamaño-potrillos, .potrillo2 .tamaño-potrillos, .potrillo3 .tamaño-potrillos, .potrillo4 .tamaño-potrillos, .potrillo5 .tamaño-potrillos, .potrillo6 .tamaño-potrillos {
+      max-width: 100%; } }
 
 /* SECCION CONTACTO */
 .maincontacto div form {
@@ -364,6 +342,13 @@
   height: 20vh;
   width: 100vw; }
 
+@media (max-width: 576px) {
+  .maincontacto .block .caja-mensaje {
+    height: 80px;
+    width: 400px; }
+  .maincontacto .block .input-cont {
+    margin: 5px; } }
+
 /* Seccion titulo de madres, padrillos, potrillos e imagen */
 .nombres-imp h2,
 .titulo-padrillos {
@@ -372,7 +357,7 @@
   font-size: 35px; }
 
 .fondo-secciones-titulo {
-  font-size: 40px;
+  font-size: 50px;
   background-color: #512421;
   width: 100vw;
   height: 100px;
@@ -383,3 +368,7 @@
   margin-top: 10px;
   margin-bottom: 20px;
   font-family: 'Noticia Text', serif; }
+
+@media (max-width: 576px) {
+  .fondo-secciones-titulo {
+    font-size: 30px; } }

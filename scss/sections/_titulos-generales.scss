@@ -7,7 +7,7 @@
     }
 
     .fondo-secciones-titulo {
-        font-size: 40px;
+        font-size: 50px;
         background-color: #512421;
         width: 100vw;
         height: 100px;
@@ -19,3 +19,11 @@
         margin-bottom: 20px;
         font-family: 'Noticia Text', serif;
     }
+
+
+// media query - estrategia mobile last//
+@media (max-width:576px){
+    .fondo-secciones-titulo {
+        font-size: 30px;
+        }
+}

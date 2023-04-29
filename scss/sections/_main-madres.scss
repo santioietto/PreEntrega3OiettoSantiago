@@ -1,6 +1,5 @@
 /* MAIN SECCION MADRES */
 
-
 .negrita {
     font-weight: bold;
     font-size: 20px;
@@ -23,12 +22,10 @@
         "hempen-tb hempen-img"
         "creme-img creme-tb";
 }
-
 .dashin-img {
     grid-area: dashin-img;
     margin: auto;
 }
-
 .dashin-tb {
     grid-area: dashin-tb;
     background-color: whitesmoke;
@@ -38,7 +35,6 @@
     padding: 40px;
     margin: auto;
 }
-
 .ava-tb {
     grid-area: ava-tb;
     background-color: whitesmoke;
@@ -48,17 +44,14 @@
     padding: 40px;
     margin: auto;
 }
-
 .ava-img {
     grid-area: ava-img;
     margin: auto;
 }
-
 .fell-img {
     grid-area: fell-img;
     margin: auto;
 }
-
 .fell-tb {
     grid-area: fell-tb;
     background-color: whitesmoke;
@@ -78,7 +71,6 @@
     padding: 120px 40px 0 40px;
     margin: auto;
 }
-
 .hempen-img {
     grid-area: hempen-img;
     margin: auto;
@@ -102,18 +94,19 @@
 // media query - estrategia mobile last//
 @media (max-width:576px) {
     .grid-madres {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(10, 1fr);
         grid-template-areas:
-            "dashin-img dashin-img"
-            "dashin-tb dashin-tb"
-            "ava-tb ava-tb"
-            "ava-img ava-img"
-            "fell-img fell-img"
-            "fell-tb fell-tb"
-            "hempen-tb hempen-tb"
-            "hempen-img hempen-img"
-            "creme-img creme-img"
-            "creme-tb creme-tb";
+            "dashin-img"
+            "dashin-tb"
+            "ava-tb"
+            "ava-img"
+            "fell-img"
+            "fell-tb"
+            "hempen-tb"
+            "hempen-img"
+            "creme-img"
+            "creme-tb";
     }
+    
 }
