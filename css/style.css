@@ -39,6 +39,37 @@
   background-color: #512421 !important;
   border-color: white !important; }
 
+/* footer */
+footer {
+  background-color: white;
+  width: 100vw;
+  border-top: 3px solid #512421;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+footer ul {
+  padding: 10px; }
+
+footer ul li {
+  text-align: center;
+  color: black;
+  list-style: none;
+  font-family: 'Noticia Text', serif; }
+
+footer div a img {
+  width: 20px; }
+
+@media (max-width: 576px) {
+  /* footer */
+  .media-main {
+    height: 72vh; }
+  footer {
+    height: 18vh; }
+  footer ul li {
+    font-size: 13px;
+    margin: auto; } }
+
 /* main index */
 .carrusel {
   width: 100vw; }
@@ -74,26 +105,40 @@ h3 {
   text-align: center;
   font-family: 'Noticia Text', serif; }
 
-/* footer */
-footer {
-  background-color: white;
-  width: 100vw;
-  border-top: 3px solid #512421;
+@media (max-width: 576px) {
+  .titulo-haras {
+    height: 80px; }
+  .titulo-haras h1 {
+    font-size: 35px;
+    margin: 10px; }
+  h3 {
+    font-size: 28px; }
+  .parrafo-inicio p {
+    font-size: 17px; } }
+
+/* SECCION SEMENTALES */
+.flex-sementales {
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 30px; }
 
-footer ul {
-  padding: 10px; }
-
-footer ul li {
-  text-align: center;
-  color: black;
-  list-style: none;
-  font-family: 'Noticia Text', serif; }
-
-footer div a img {
-  width: 20px; }
+@media (max-width: 576px) {
+  .fondo-secciones-titulo {
+    height: 80px;
+    font-size: 35px; }
+  .titulo-padrillos {
+    font-size: 30px; }
+  .tamaño-padrillos {
+    width: 350px;
+    margin: auto;
+    padding: 10px; }
+  .video {
+    width: 250px;
+    height: 215px;
+    margin: auto; } }
 
 /* MAIN SECCION MADRES */
 .fondo-secciones-titulo {
@@ -189,21 +234,11 @@ footer div a img {
   padding: 120px 40px 0 40px;
   margin: auto; }
 
-/* Seccion titulo de madres, padrillos, potrillos e imagen */
-.nombres-imp h2,
-.titulo-padrillos {
-  text-align: center;
-  font-family: 'Noticia Text', serif;
-  font-size: 35px; }
-
-/* SECCION SEMENTALES */
-.flex-sementales {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  margin-bottom: 30px; }
+@media (max-width: 576px) {
+  .grid-madres {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas: "dashin-img dashin-img" "dashin-tb dashin-tb" "ava-tb ava-tb" "ava-img ava-img" "fell-img fell-img" "fell-tb fell-tb" "hempen-tb hempen-tb" "hempen-img hempen-img" "creme-img creme-img" "creme-tb creme-tb"; } }
 
 /* SECCION PRODUCTOS EN VENTA */
 .prod-venta {
@@ -274,11 +309,44 @@ footer div a img {
   display: flex;
   justify-content: center; }
 
-/* SECCION CONTACTO */
-.fondo-contacto {
-  background-image: radial-gradient(white, #b8b8b8);
-  height: 70vh; }
+@media (max-width: 576px) {
+  .prod-venta {
+    margin-left: 35px;
+    grid-template-columns: 30rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "potrillo1" "potrillo2" "potrillo3" "potrillo4" "potrillo5" "potrillo6"; }
+  .potrillo1 {
+    /* width: 500px; */
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .potrillo2 {
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .potrillo3 {
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .potrillo4 {
+    max-width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .potrillo5 {
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+  .potrillo6 {
+    min-width: 50vw;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px; } }
 
+/* SECCION CONTACTO */
 .fondo-contacto form {
   height: 50vh; }
 
@@ -323,79 +391,9 @@ footer div a img {
   justify-content: center;
   align-items: center; }
 
-/* MEDIA QUERY */
-/* Estrategia mobile last */
-@media (max-width: 576px) {
-  /* footer */
-  .media-main {
-    height: 72vh; }
-  footer {
-    height: 18vh; }
-  footer ul li {
-    font-size: 13px;
-    margin: auto; }
-  /* index */
-  .titulo-haras {
-    height: 80px; }
-  .titulo-haras h1 {
-    font-size: 35px;
-    margin: 10px; }
-  h3 {
-    font-size: 28px; }
-  .parrafo-inicio p {
-    font-size: 17px; }
-  /* Seccion padrillos */
-  .fondo-secciones-titulo {
-    height: 80px;
-    font-size: 35px; }
-  .titulo-padrillos {
-    font-size: 30px; }
-  .tamaño-padrillos {
-    width: 350px;
-    margin: auto;
-    padding: 10px; }
-  .video {
-    width: 250px;
-    height: 215px;
-    margin: auto; }
-  /* Seccion madres */
-  .grid-madres {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: "dashin-img dashin-img" "dashin-tb dashin-tb" "ava-tb ava-tb" "ava-img ava-img" "fell-img fell-img" "fell-tb fell-tb" "hempen-tb hempen-tb" "hempen-img hempen-img" "creme-img creme-img" "creme-tb creme-tb"; }
-  /* Seccion productos en venta */
-  .prod-venta {
-    margin-left: 35px;
-    grid-template-columns: 30rem;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: "potrillo1" "potrillo2" "potrillo3" "potrillo4" "potrillo5" "potrillo6"; }
-  .potrillo1 {
-    /* width: 500px; */
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px; }
-  .potrillo2 {
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .potrillo3 {
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .potrillo4 {
-    max-width: 300px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .potrillo5 {
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; }
-  .potrillo6 {
-    min-width: 50vw;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px; } }
+/* Seccion titulo de madres, padrillos, potrillos e imagen */
+.nombres-imp h2,
+.titulo-padrillos {
+  text-align: center;
+  font-family: 'Noticia Text', serif;
+  font-size: 35px; }

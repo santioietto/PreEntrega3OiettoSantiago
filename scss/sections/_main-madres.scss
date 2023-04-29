@@ -1,0 +1,132 @@
+/* MAIN SECCION MADRES */
+
+.fondo-secciones-titulo {
+    font-size: 40px;
+    background-color: #512421;
+    width: 100vw;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Noticia Text', serif;
+}
+
+.negrita {
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Noticia Text', serif;
+}
+
+.negrita-hijos {
+    font-weight: bolder;
+}
+
+/* madres grid */
+.grid-madres {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "dashin-img dashin-tb"
+        "ava-tb ava-img"
+        "fell-img fell-tb"
+        "hempen-tb hempen-img"
+        "creme-img creme-tb";
+}
+
+.dashin-img {
+    grid-area: dashin-img;
+    margin: auto;
+}
+
+.dashin-tb {
+    grid-area: dashin-tb;
+    background-color: whitesmoke;
+    height: 50rem;
+    text-align: left;
+    font-family: 'Noticia Text', serif;
+    padding: 40px;
+    margin: auto;
+}
+
+.ava-tb {
+    grid-area: ava-tb;
+    background-color: whitesmoke;
+    height: 50rem;
+    text-align: left;
+    font-family: 'Noticia Text', serif;
+    padding: 40px;
+    margin: auto;
+}
+
+.ava-img {
+    grid-area: ava-img;
+    margin: auto;
+}
+
+.fell-img {
+    grid-area: fell-img;
+    margin: auto;
+}
+
+.fell-tb {
+    grid-area: fell-tb;
+    background-color: whitesmoke;
+    height: 50rem;
+    text-align: left;
+    font-family: 'Noticia Text', serif;
+    padding: 120px 40px 0 40px;
+    margin: auto;
+}
+
+.hempen-tb {
+    grid-area: hempen-tb;
+    background-color: whitesmoke;
+    height: 50rem;
+    text-align: left;
+    font-family: 'Noticia Text', serif;
+    padding: 120px 40px 0 40px;
+    margin: auto;
+}
+
+.hempen-img {
+    grid-area: hempen-img;
+    margin: auto;
+}
+
+.creme-img {
+    grid-area: creme-img;
+    margin: auto;
+}
+
+.creme-tb {
+    grid-area: creme-tb;
+    background-color: whitesmoke;
+    height: 50rem;
+    text-align: left;
+    font-family: 'Noticia Text', serif;
+    padding: 120px 40px 0 40px;
+    margin: auto;
+}
+
+// media query - estrategia mobile last//
+@media (max-width:576px) {
+    .grid-madres {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(10, 1fr);
+        grid-template-areas:
+            "dashin-img dashin-img"
+            "dashin-tb dashin-tb"
+            "ava-tb ava-tb"
+            "ava-img ava-img"
+            "fell-img fell-img"
+            "fell-tb fell-tb"
+            "hempen-tb hempen-tb"
+            "hempen-img hempen-img"
+            "creme-img creme-img"
+            "creme-tb creme-tb";
+    }
+}

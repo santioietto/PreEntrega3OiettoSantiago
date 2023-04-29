@@ -1,0 +1,151 @@
+/* SECCION PRODUCTOS EN VENTA */
+.prod-venta {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "potrillo1 potrillo2 potrillo3"
+        "potrillo4 potrillo5 potrillo6";
+}
+
+.potrillo1 {
+    grid-area: potrillo1;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 1px black;
+}
+
+.potrillo2 {
+    grid-area: potrillo2;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 1px black;
+}
+
+.potrillo3 {
+    grid-area: potrillo3;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 1px black;
+}
+
+.potrillo4 {
+    grid-area: potrillo4;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 1px black;
+}
+
+.potrillo5 {
+    grid-area: potrillo5;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 1px black;
+}
+
+.potrillo6 {
+    grid-area: potrillo6;
+    min-width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid 1px black;
+}
+
+.potrillo1,
+.potrillo2,
+.potrillo3,
+.potrillo4,
+.potrillo5,
+.potrillo6 {
+    overflow: hidden;
+}
+
+.flex-enlace {
+    display: flex;
+    justify-content: center;
+}
+
+
+// media query - estrategia mobile last//
+@media (max-width:576px) {
+    .prod-venta {
+        margin-left: 35px;
+        grid-template-columns: 30rem;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "potrillo1"
+            "potrillo2"
+            "potrillo3"
+            "potrillo4"
+            "potrillo5"
+            "potrillo6";
+
+    }
+
+    .potrillo1 {
+
+        /* width: 500px; */
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+
+    .potrillo2 {
+
+        width: 500px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .potrillo3 {
+
+        width: 500px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .potrillo4 {
+
+        max-width: 300px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .potrillo5 {
+
+        width: 500px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    .potrillo6 {
+
+        min-width: 50vw;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+    }
+}

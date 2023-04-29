@@ -1,0 +1,44 @@
+/* footer */
+footer {
+    background-color: white;
+    width: 100vw;
+    border-top: 3px solid #512421;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+footer ul {
+    padding: 10px;
+}
+
+footer ul li {
+    text-align: center;
+    color: black;
+    list-style: none;
+    font-family: 'Noticia Text', serif;
+}
+
+footer div a img {
+    width: 20px;
+}
+
+
+// media query - estrategia mobile last//
+@media (max-width:576px) {
+
+    /* footer */
+    .media-main {
+        height: 72vh;
+    }
+
+    footer {
+        height: 18vh;
+    }
+
+    footer ul li {
+        font-size: 13px;
+        margin: auto;
+    }
+}

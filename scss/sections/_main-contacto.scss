@@ -1,0 +1,56 @@
+/* SECCION CONTACTO */
+
+
+.fondo-contacto form {
+    height: 50vh;
+}
+
+.fondo-contacto iframe {
+    height: 20vh;
+    width: 100vw;
+}
+
+.input-cont {
+    border-radius: 5px;
+    font-size: 15px;
+    margin: 20px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    border-radius: 10%;
+    padding: 3px;
+    background-color: white;
+}
+
+.boton:hover {
+    border-color: white;
+    color: white;
+    background-color: #512421;
+    border-radius: 10%;
+}
+
+.caja-mensaje {
+    height: 100px;
+    width: 700px;
+}
+
+.input-cont:focus {
+    transform: scale(1.1);
+    transition: .4s;
+}
+
+.flex-map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

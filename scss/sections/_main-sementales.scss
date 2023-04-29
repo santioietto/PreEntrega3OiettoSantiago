@@ -1,0 +1,33 @@
+/* SECCION SEMENTALES */
+.flex-sementales {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+// media query - estrategia mobile last//
+@media (max-width:576px) {
+    .fondo-secciones-titulo {
+        height: 80px;
+        font-size: 35px;
+    }
+
+    .titulo-padrillos {
+        font-size: 30px;
+    }
+
+    .tamaño-padrillos {
+        width: 350px;
+        margin: auto;
+        padding: 10px;
+    }
+
+    .video {
+        width: 250px;
+        height: 215px;
+        margin: auto;
+    }
+}
