@@ -44,14 +44,14 @@
   display: flex;
   justify-content: space-around;
   align-items: center; }
-  .footer ul {
+  .footer__ul {
     padding: 10px; }
-    .footer ul li {
+    .footer__ul li {
       text-align: center;
       color: black;
       list-style: none;
       font-family: 'Noticia Text', serif; }
-  .footer div a img {
+  .footer__div a img {
     width: 20px; }
 
 @media (max-width: 576px) {

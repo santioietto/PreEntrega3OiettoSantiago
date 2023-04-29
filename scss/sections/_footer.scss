@@ -7,7 +7,7 @@
     justify-content: space-around;
     align-items: center;
 
-    ul {
+    &__ul {
         padding: 10px;
 
         li {
@@ -17,7 +17,7 @@
             font-family: 'Noticia Text', serif;
         }
     }
-    div{
+    &__div{
         a{
             img{
                 width: 20px;
