@@ -2,9 +2,9 @@
 .maincontacto {
     div {
         form {
-            height: 50vh;
+            height: 45vh;
             
-            .block {
+            .maincontacto__block {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -38,7 +38,7 @@
 
                 .caja-mensaje {
                     height: 100px;
-                    width: 700px;
+                    width: 600px;
                 }
             }
         }
@@ -54,7 +54,7 @@
    // media query - estrategia mobile last//
    @media (max-width:576px){
     .maincontacto{
-        .block{
+        &__block{
             .caja-mensaje {
                 height: 80px;
                 width: 400px;

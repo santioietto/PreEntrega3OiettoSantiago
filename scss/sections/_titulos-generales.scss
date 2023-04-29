@@ -1,6 +1,6 @@
     /* Seccion titulo de madres, padrillos, potrillos e imagen */
     .nombres-imp h2,
-    .titulo-padrillos {
+    .mainsementales__titulopadrillos{
         text-align: center;
         font-family: 'Noticia Text', serif;
         font-size: 35px;
@@ -24,6 +24,7 @@
 // media query - estrategia mobile last//
 @media (max-width:576px){
     .fondo-secciones-titulo {
-        font-size: 30px;
+            height: 80px;
+            font-size: 35px;
         }
 }

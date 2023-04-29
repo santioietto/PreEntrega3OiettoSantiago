@@ -95,18 +95,60 @@
 @media (max-width:576px) {
     .grid-madres {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-rows: 0.5fr 1.2fr 0.5fr 1.4fr 0.5fr 0.2fr 0.5fr 1fr 0.5fr 0.5fr;
         grid-template-areas:
             "dashin-img"
             "dashin-tb"
-            "ava-tb"
             "ava-img"
+            "ava-tb"
             "fell-img"
             "fell-tb"
-            "hempen-tb"
             "hempen-img"
+            "hempen-tb"
             "creme-img"
             "creme-tb";
     }
-    
+    .dashin-img{
+        background-color:whitesmoke ;
+        padding: 40px;
+    }
+    .dashin-tb{
+        margin: 0;
+        height: 55rem;
+        background-color: white;
+    }
+    .ava-img{
+        background-color:whitesmoke ;
+        padding: 40px;
+    }
+    .ava-tb{
+        margin: 0;
+        background-color: white;
+    }
+    .fell-img{
+        background-color:whitesmoke ;
+        padding: 40px;
+    }
+    .fell-tb{
+        padding: 40px;
+        background-color: white;
+        height: 30rem;
+    }
+    .hempen-img{
+        background-color:whitesmoke ;
+        padding: 40px;
+    }
+    .hempen-tb{
+        padding: 40px;
+        background-color: white;
+    }
+    .creme-img{
+        background-color:whitesmoke ;
+        padding: 40px;
+    }
+    .creme-tb{
+        background-color: white;
+        padding: 40px;
+        height: 30rem;
+    }
 }

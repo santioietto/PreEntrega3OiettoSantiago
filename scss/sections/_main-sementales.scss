@@ -1,27 +1,25 @@
 /* SECCION SEMENTALES */
-.flex-sementales {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 30px;
-    margin-bottom: 30px;
+.mainsementales {
+    &__flexsementales {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
 
-}
-.infosementales {
+    &__infosementales {
         width: 70%;
         margin: auto;
         text-align: center;
+    }
 }
 
 // media query - estrategia mobile last//
 @media (max-width:576px) {
-    .fondo-secciones-titulo {
-        height: 80px;
-        font-size: 35px;
-    }
-
-    .titulo-padrillos {
+    
+    &__titulopadrillos {
         font-size: 30px;
     }
 

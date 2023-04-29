@@ -110,7 +110,7 @@
     font-size: 17px; } }
 
 /* SECCION SEMENTALES */
-.flex-sementales {
+.mainsementales__flexsementales {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -118,16 +118,13 @@
   margin-top: 30px;
   margin-bottom: 30px; }
 
-.infosementales {
+.mainsementales__infosementales {
   width: 70%;
   margin: auto;
   text-align: center; }
 
 @media (max-width: 576px) {
-  .fondo-secciones-titulo {
-    height: 80px;
-    font-size: 35px; }
-  .titulo-padrillos {
+  __titulopadrillos {
     font-size: 30px; }
   .tamaño-padrillos {
     width: 350px;
@@ -222,8 +219,41 @@
 @media (max-width: 576px) {
   .grid-madres {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-areas: "dashin-img" "dashin-tb" "ava-tb" "ava-img" "fell-img" "fell-tb" "hempen-tb" "hempen-img" "creme-img" "creme-tb"; } }
+    grid-template-rows: 0.5fr 1.2fr 0.5fr 1.4fr 0.5fr 0.2fr 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-areas: "dashin-img" "dashin-tb" "ava-img" "ava-tb" "fell-img" "fell-tb" "hempen-img" "hempen-tb" "creme-img" "creme-tb"; }
+  .dashin-img {
+    background-color: whitesmoke;
+    padding: 40px; }
+  .dashin-tb {
+    margin: 0;
+    height: 55rem;
+    background-color: white; }
+  .ava-img {
+    background-color: whitesmoke;
+    padding: 40px; }
+  .ava-tb {
+    margin: 0;
+    background-color: white; }
+  .fell-img {
+    background-color: whitesmoke;
+    padding: 40px; }
+  .fell-tb {
+    padding: 40px;
+    background-color: white;
+    height: 30rem; }
+  .hempen-img {
+    background-color: whitesmoke;
+    padding: 40px; }
+  .hempen-tb {
+    padding: 40px;
+    background-color: white; }
+  .creme-img {
+    background-color: whitesmoke;
+    padding: 40px; }
+  .creme-tb {
+    background-color: white;
+    padding: 40px;
+    height: 30rem; } }
 
 /* SECCION PRODUCTOS EN VENTA */
 .prod-venta {
@@ -310,48 +340,48 @@
 
 /* SECCION CONTACTO */
 .maincontacto div form {
-  height: 50vh; }
-  .maincontacto div form .block {
+  height: 45vh; }
+  .maincontacto div form .maincontacto__block {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
-    .maincontacto div form .block .input-cont {
+    .maincontacto div form .maincontacto__block .input-cont {
       border-radius: 5px;
       font-size: 15px;
       margin: 20px;
       height: 30px;
       text-align: center; }
-      .maincontacto div form .block .input-cont:focus {
+      .maincontacto div form .maincontacto__block .input-cont:focus {
         transform: scale(1.1);
         transition: .3s; }
-    .maincontacto div form .block .boton {
+    .maincontacto div form .maincontacto__block .boton {
       border-radius: 10%;
       padding: 3px;
       background-color: white; }
-      .maincontacto div form .block .boton:hover {
+      .maincontacto div form .maincontacto__block .boton:hover {
         border-color: white;
         color: white;
         background-color: #512421;
         border-radius: 10%; }
-    .maincontacto div form .block .caja-mensaje {
+    .maincontacto div form .maincontacto__block .caja-mensaje {
       height: 100px;
-      width: 700px; }
+      width: 600px; }
 
 .maincontacto div iframe {
   height: 20vh;
   width: 100vw; }
 
 @media (max-width: 576px) {
-  .maincontacto .block .caja-mensaje {
+  .maincontacto__block .caja-mensaje {
     height: 80px;
     width: 400px; }
-  .maincontacto .block .input-cont {
+  .maincontacto__block .input-cont {
     margin: 5px; } }
 
 /* Seccion titulo de madres, padrillos, potrillos e imagen */
 .nombres-imp h2,
-.titulo-padrillos {
+.mainsementales__titulopadrillos {
   text-align: center;
   font-family: 'Noticia Text', serif;
   font-size: 35px; }
@@ -371,4 +401,5 @@
 
 @media (max-width: 576px) {
   .fondo-secciones-titulo {
-    font-size: 30px; } }
+    height: 80px;
+    font-size: 35px; } }
