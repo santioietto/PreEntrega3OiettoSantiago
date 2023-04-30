@@ -54,15 +54,17 @@
    // media query - estrategia mobile last//
    @media (max-width:576px){
     .maincontacto{
-        &__block{
-            .caja-mensaje {
-                height: 80px;
-                width: 400px;
+        div{
+            form{
+                height: 50vh;
+                &__block{
+                    .caja-mensaje {
+                        height: 80px;
+                        width: 400px;
+                    }
+        
+                }
             }
-            .input-cont{
-                margin: 5px;
-            }
-
         }
     }
 }

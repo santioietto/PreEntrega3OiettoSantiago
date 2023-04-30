@@ -377,11 +377,11 @@
   width: 100vw; }
 
 @media (max-width: 576px) {
-  .maincontacto__block .caja-mensaje {
-    height: 80px;
-    width: 400px; }
-  .maincontacto__block .input-cont {
-    margin: 5px; } }
+  .maincontacto div form {
+    height: 50vh; }
+    .maincontacto div form__block .caja-mensaje {
+      height: 80px;
+      width: 400px; } }
 
 /* Seccion titulo de madres, padrillos, potrillos e imagen */
 .nombres-imp h2,
@@ -405,5 +405,11 @@
 
 @media (max-width: 576px) {
   .fondo-secciones-titulo {
-    height: 80px;
-    font-size: 40px; } }
+    height: 85px;
+    font-size: 40px;
+    text-align: center; } }
+
+@media (max-width: 390px) {
+  .fondo-secciones-titulo {
+    height: 75px;
+    font-size: 35px; } }
