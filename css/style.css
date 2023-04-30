@@ -100,9 +100,9 @@
 
 @media (max-width: 576px) {
   .mainindex__tituloharas {
-    height: 80px; }
+    height: 90px; }
     .mainindex__tituloharas h1 {
-      font-size: 45px;
+      font-size: 40px;
       margin: 10px; }
   .mainindex h3 {
     font-size: 35px; }
