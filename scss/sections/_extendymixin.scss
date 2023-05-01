@@ -1,4 +1,4 @@
-// extend//
+// extend aplicado en grid productos en venta//
 .grid-prod {
     width: 500px;
     margin: auto;
@@ -7,3 +7,17 @@
     border: solid 1px black;
 }
 
+// mixin aplicado en titulos-generales desktop y resposive//
+@mixin fondotitulo ($altura,$fuente){
+    background-color: $color-principal;
+    width: 100vw;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Noticia Text', serif;
+    height: $altura;
+    font-size: $fuente;
+}
